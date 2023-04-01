@@ -54,13 +54,35 @@ h3 {
   font-size: 1.5em;
 }
 #vue {
-    grid-template-columns: 60px 60px 60px 60px;
-    img {
-      grid-template-rows: auto;
-      width: 25%;
-    }
-  /*display: flex;
-  flex-direction: column;
-  gap: 20px;*/
+  width: 90%;
+  margin: auto;
+  .prods {
+  float: left;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  img {
+    width: 300px;
+    height:250px;
+    display: block;
+    margin: 5px;
+  }
+  .text{
+    text-align: center;
+    margin: 5px;
+  }
+  button {
+    background-color: $white;
+    color: $black;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+  }
+  button:hover {
+    background-color: $black;
+    color: $white;
+  }
 }
+}
+
 $max-width: 80em;

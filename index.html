@@ -16,15 +16,22 @@
         <h1>Fresh Food To Go</h1>
     </div>
     <h3>Selections</h3>
-    <div id="vue" v-for="item in items" class="col">
-        <img :src="item.url" alt="No Image" class="row"/>
-        <section>{{ item.name }} <br> {{ item.desc }}</section>
-        <button>Add to Cart</button>
+    <div id="vue" v-for="item in items">
+        <div class="prods">
+            <img :src="item.url" alt="No Image"/>
+            <div class="text">
+            <section><strong>{{ item.name }}</strong><br><em>{{ item.desc }}</em></section>
+            <button>Add to Cart</button>
+            </div>
+        </div>
     </div>
 
 </div>
 
 <script>
+    
+   
+
     const vm = new Vue ({
         el: '#vue',
         data() {
@@ -92,7 +99,7 @@
                     }
                 ]
             }
-        }
+        },
     })
 </script>
 

@@ -41,14 +41,35 @@ h3 {
 }
 
 #vue {
-  grid-template-columns: 60px 60px 60px 60px;
-  /*display: flex;
-  flex-direction: column;
-  gap: 20px;*/
+  width: 90%;
+  margin: auto;
 }
-#vue img {
-  grid-template-rows: auto;
-  width: 25%;
+#vue .prods {
+  float: left;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+}
+#vue .prods img {
+  width: 300px;
+  height: 250px;
+  display: block;
+  margin: 5px;
+}
+#vue .prods .text {
+  text-align: center;
+  margin: 5px;
+}
+#vue .prods button {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+}
+#vue .prods button:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 /*# sourceMappingURL=styles.css.map */
