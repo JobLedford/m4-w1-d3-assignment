@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Module 4 Week 1 Assignment</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.11/vue.js"></script>
+</head>
+<body>
+    
+<div class="main-wrapper">
+  
+    <div class="header">
+        <h1>Fresh Food To Go</h1>
+    </div>
+    <h3>Selections</h3>
+    <div id="vue" v-for="item in items" class="col">
+        <img :src="item.url" alt="No Image" class="row"/>
+        <section>{{ item.name }} <br> {{ item.desc }}</section>
+        <button>Add to Cart</button>
+    </div>
+
+</div>
+
+<script>
+    const vm = new Vue ({
+        el: '#vue',
+        data() {
+            return {
+                items: [
+                    {
+                    name: 'Pasta',
+                    url: 'https://upload.wikimedia.org/wikipedia/commons/f/f0/Spaghetti_aglio%2C_olio_e_peperoncino_%2816284859030%29.jpg',
+                    desc: 'Healthy Pasta',
+                    }, 
+                    {
+                    name: 'Red Crab',
+                    url: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/Jacques_Lameloise%2C_escab%C3%A8che_d%27%C3%A9crevisses_sur_gaspacho_d%27asperge_et_cresson.jpg',
+                    desc: 'Fresh from Alaska',
+                    }, 
+                    {
+                    name: 'Breakfast Special',
+                    url: 'https://upload.wikimedia.org/wikipedia/commons/0/02/Breakfast_at_Irving_Street_Kitchen.jpg',
+                    desc: 'Good for the soul',
+                    }, 
+                    {
+                    name: 'Sea Shells Mix',
+                    url: 'https://upload.wikimedia.org/wikipedia/commons/4/4b/Seafood_linguine.jpg',
+                    desc: 'For the shell lovers',
+                    }, 
+                    {
+                    name: 'Ultimate Kebab',
+                    url: 'https://upload.wikimedia.org/wikipedia/commons/a/a5/Various_kebab.jpg',
+                    desc: 'The best from Middle East',
+                    }, 
+                    {
+                    name: 'Chicken Steak',
+                    url: 'https://upload.wikimedia.org/wikipedia/commons/d/d9/Chicken_steak_with_pepper_sauce.jpg',
+                    desc: 'Grilled to perfection',
+                    }, 
+                    {
+                    name: 'Filet Mignon',
+                    url: 'https://upload.wikimedia.org/wikipedia/commons/1/1a/.Filet_mignon_et_foie_gras_au_muscat_de_Beaumes-de-Venise%2C_Pastis_Bistro%2C_Palo_Alto.jpg',
+                    desc: 'Juicy steak served with potatoes au gratin',
+                    }, 
+                    {
+                    name: 'Bitsro Brunch',
+                    url: 'https://upload.wikimedia.org/wikipedia/commons/4/48/Dishes_at_Bistro_C%2C_Hastings_Street%2C_Noosa_Heads%2C_Queensland_02.jpg',
+                    desc: 'A touch of Australia',
+                    }, 
+                    {
+                    name: 'California Crepe',
+                    url: 'https://upload.wikimedia.org/wikipedia/commons/3/32/2011-04-09_17.02.43%2C_Whispers_Cafe_and_Creperie%2C_Belmont%2C_CA_%285982715933%29.jpg',
+                    desc: 'Stuffed with grilled shrimp',
+                    }, 
+                    {
+                    name: 'Top Burger',
+                    url: 'https://upload.wikimedia.org/wikipedia/commons/d/d4/Hamburguesa_de_carne.jpg',
+                    desc: 'The tallest hamburger from Peru',
+                    }, 
+                    {
+                    name: 'Chicken Garlic Pizza',
+                    url: 'https://upload.wikimedia.org/wikipedia/commons/3/33/Round_Table_chicken_%26_garlic_pizza.JPG',
+                    desc: 'Our specialty pizza',
+                    }, 
+                    {
+                    name: 'Wok Away Healthy',
+                    url: 'https://upload.wikimedia.org/wikipedia/commons/d/d2/Stir_Fry_Wok_-_Free_For_Commercial_Use_-_FFCU_%2827159057131%29.jpg',
+                    desc: 'Healthy blend of noodles and veggies',
+                    }
+                ]
+            }
+        }
+    })
+</script>
+
+</body>
+</html>

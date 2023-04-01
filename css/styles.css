@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css?family=Bitter:400,400italic,700);
+/*---------
+white rgb(255,255,255)
+black rgb(0,0,0)
+opaque black rgba(0,0,0,0.5)
+less opaque black rgba(0,0,0,0.24)
+midnight blue rgb(22, 34, 42)
+grey blue rgb(58, 96, 115)
+
+
+//Fonts:
+Bitter
+FontAwesome
+
+----------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bitter";
+}
+
+.header {
+  width: 100%;
+  background: -webkit-linear-gradient(left, rgb(58, 96, 115) 33%, rgb(22, 34, 42) 85%, rgb(0, 0, 0) 100%);
+  background: -moz-linear-gradient(left, rgb(58, 96, 115) 33%, rgb(22, 34, 42) 85%, rgb(0, 0, 0) 100%);
+  background: -o-linear-gradient(left, rgb(58, 96, 115) 33%, rgb(22, 34, 42) 85%, rgb(0, 0, 0) 100%);
+  background: linear-gradient(left, rgb(58, 96, 115) 33%, rgb(22, 34, 42) 85%, rgb(0, 0, 0) 100%);
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 3em;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#vue {
+  grid-template-columns: 60px 60px 60px 60px;
+  /*display: flex;
+  flex-direction: column;
+  gap: 20px;*/
+}
+#vue img {
+  grid-template-rows: auto;
+  width: 25%;
+}
+
+/*# sourceMappingURL=styles.css.map */

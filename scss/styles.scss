@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/css?family=Bitter:400,400italic,700);
+
+
+@mixin gradient($direction, $list) { 
+  background: -webkit-linear-gradient($direction, $list);
+  background: -moz-linear-gradient($direction, $list);
+  background: -o-linear-gradient($direction, $list);
+  background: linear-gradient($direction, $list);  
+}
+
+$white: rgb(255,255,255);
+$black: rgb(0,0,0);
+$o-black: rgba(0,0,0,0.5);
+$lo-black: rgba(0,0,0,0.24);
+$m-blue: rgb(22,34,42);
+$g-blue: rgb(58,96,115);
+
+$list1: $g-blue 33%, $m-blue 85%, $black 100%;
+
+//Colors:
+/*---------
+white rgb(255,255,255)
+black rgb(0,0,0)
+opaque black rgba(0,0,0,0.5)
+less opaque black rgba(0,0,0,0.24)
+midnight blue rgb(22, 34, 42)
+grey blue rgb(58, 96, 115)
+
+
+//Fonts:
+Bitter
+FontAwesome
+
+----------*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bitter";
+}
+.header {
+  width: 100%;
+  @include gradient(left, $list1)
+}
+h1{
+  width: 100%;
+  text-align: center;
+  color: $white;
+  padding: 3em;
+}
+h3 {
+  text-align: center;
+  font-size: 1.5em;
+}
+#vue {
+    grid-template-columns: 60px 60px 60px 60px;
+    img {
+      grid-template-rows: auto;
+      width: 25%;
+    }
+  /*display: flex;
+  flex-direction: column;
+  gap: 20px;*/
+}
+$max-width: 80em;
